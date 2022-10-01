@@ -15,8 +15,8 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator >
         <Stack.Screen options={{headerShown:false}} name="LandingScreen" component={LandingScreen}/>
-        <Stack.Screen name="CreateScreen" component={CreateScreen}/>
-        <Stack.Screen name="EventScreen" component={EventScreen}/>
+        <Stack.Screen options={{headerBackTitleVisible:false}} name="Create Event" component={CreateScreen}/>
+        <Stack.Screen  options={{ headerBackTitleVisible:false}} name="Event" component={EventScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

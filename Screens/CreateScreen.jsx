@@ -11,7 +11,7 @@ export default function CreateScreen( {navigation} ) {
     const [eventImage, setEventImage] = React.useState('');
   function  goToEventScreen(){
         
-         navigation.navigate('EventScreen', {eventName, hostName, eventDate, eventTime, eventLocation, eventImage});
+         navigation.navigate('Event', {eventName, hostName, eventDate, eventTime, eventLocation, eventImage});
     }
   
   return (
@@ -62,7 +62,7 @@ export default function CreateScreen( {navigation} ) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#DDDDDD',
     alignItems: 'center',
 
   },
