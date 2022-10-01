@@ -14,7 +14,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator >
-        <Stack.Screen name="LandingScreen" component={LandingScreen}/>
+        <Stack.Screen options={{headerShown:false}} name="LandingScreen" component={LandingScreen}/>
         <Stack.Screen name="CreateScreen" component={CreateScreen}/>
         <Stack.Screen name="EventScreen" component={EventScreen}/>
       </Stack.Navigator>
@@ -22,11 +22,3 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
