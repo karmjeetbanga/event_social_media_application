@@ -28,11 +28,11 @@ export default function EventScreen({route}) {
         <View style={styles.bottomView}>
             <View style={styles.innerBottomView}>
          {/* <IconName name="FiCalendar" size={20} color="black" /> */}
-            <Text> 
+            <Text style={styles.textStyle}> 
                 {route.params.eventDate}
                 {route.params.eventTime}
             </Text>
-            <Text>
+            <Text style={styles.textStyle}>
                 {route.params.eventLocation}
             </Text>
             </View>
@@ -84,5 +84,25 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'gray',
     },
+    bottomView: {
+        width:'100%',
+        height:'20%',
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center',
+    },
+    innerBottomView: {
+        width:'100%',
+        height:'50%',
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center',
+    },
+    textStyle: {
+        fontSize: 15,
+        fontWeight: 'bold',
+        color: 'gray',
+    },
+    
 
 });

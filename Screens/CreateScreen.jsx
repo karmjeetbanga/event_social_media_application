@@ -3,12 +3,12 @@ import { Text, TextInput, TouchableOpacity, View , StyleSheet } from 'react-nati
 
 export default function CreateScreen( {navigation} ) {
 
-    const [eventName, setEventName] = React.useState('');
-    const [hostName, setHostName] = React.useState('');
-    const [eventDate, setEventDate] = React.useState('');
-    const [eventTime, setEventTime] = React.useState('');
-    const [eventLocation, setEventLocation] = React.useState('');
-    const [eventImage, setEventImage] = React.useState('');
+    const [eventName, setEventName] = React.useState('Birthday Party');
+    const [hostName, setHostName] = React.useState('Karmjeet Kaur');
+    const [eventDate, setEventDate] = React.useState(' 10/10/2021');
+    const [eventTime, setEventTime] = React.useState('  10:00 AM');
+    const [eventLocation, setEventLocation] = React.useState('  1234 Main St, San Francisco, CA 94122');
+    const [eventImage, setEventImage] = React.useState('    ');
   function  goToEventScreen(){
         
          navigation.navigate('Event', {eventName, hostName, eventDate, eventTime, eventLocation, eventImage});
